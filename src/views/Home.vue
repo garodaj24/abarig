@@ -1,18 +1,28 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="d-flex align-center flex-column">
+    <h1>Who's your favorite football player?</h1>
+    <v-btn width="400" class="mt-5" @click="next">
+      Cristiano Ronaldo
+    </v-btn>
+    <v-btn width="400" class="mt-5" @click="next">
+      Lionel Messi
+    </v-btn>
+    <v-btn width="400" class="mt-5" @click="next">
+      Robert Lewandowski
+    </v-btn>
+    <v-btn width="400" class="mt-5" @click="next">
+      Karim Benzema
+    </v-btn>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
   name: 'Home',
-  components: {
-    HelloWorld
-  }
+  methods: {
+    next() {
+      this.$router.push('About');
+    },
+  },
 }
 </script>
