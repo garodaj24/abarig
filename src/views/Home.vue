@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex align-center flex-column">
+  <div class="d-flex align-center flex-column text-center">
     <h1>Who's your favorite football player?</h1>
     <v-btn width="400" class="mt-5" @click="next">
       Cristiano Ronaldo
