@@ -24,7 +24,7 @@ const routes = [
 
 const router = new VueRouter({
   mode: 'history',
-  base: '/abarig/',
+  base: process.env.BASE_URL,
   routes
 })
 
